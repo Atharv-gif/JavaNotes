@@ -1,0 +1,51 @@
+import java.util.HashSet;
+import java.util.Iterator;  //iterator ke liye use kiya jaata hai 
+
+public class Main{
+
+  public static void main(String[] args){
+// creation 
+
+    HashSet<Integer> set = new HashSet<Integer>();
+
+// insert
+
+    set.add(1);
+    set.add(2);
+    set.add(3);
+    set.add(4);
+
+//size
+
+    System.out.println("Size of set is :" + set.size());
+
+
+
+    
+
+//contains
+    if(set.contains(1)){
+      System.out.println("Set contains 1");
+    }
+
+    if(!set.contains(6)){
+      System.out.println("Does not contain 6");
+    }
+
+
+
+//remove
+
+    set.remove(1);
+    if(!set.contains(1)){
+      System.out.println("Does not contain 1, we delete");    }
+
+//iterate 
+
+Iterator it = set.iterator();
+    while(it.hasNext()){
+      System.out.println(it.next());
+    }   
+
+  }
+}

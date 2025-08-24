@@ -62,3 +62,34 @@ int arr[] = {1,2,3};
       System.out.print(val + ""); // this wil also give the same 
     }
     System.out.println();
+
+---------------------------------------again hashing -----------------------------------------------------
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main{
+
+  
+  public static void main(String[] args){
+
+    // this contains key and value like a dictionary in python 
+    HashMap<String , Integer> map = new HashMap<String , Integer>();
+
+
+           //Insertion
+           map.put("India", 120);   //(yahan pe insert kar diya hamne key and value)
+           map.put("US", 30);
+           map.put("China", 150);
+
+    System.out.println(map);
+
+    for(Map.Entry<String,Integer> e : map.entrySet()) {
+      System.out.println(e.getKey());
+      System.out.println(e.getValue());   // (aur yahan pe key and value differentiate hoke aayenge as a output)
+    }
+
+
+    
+  }
+}
